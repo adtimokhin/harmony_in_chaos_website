@@ -11,8 +11,38 @@ body {
   background: var(--background)
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* 
+
+  Text classes
+
+  Adaptively sized text classes for different screen sizes
+
+  :)
+*/
+.hero-title-text{
+  @apply font-bold text-main-text text-[1.5rem] phone:text-[2.25rem] tablet:text-[2.25rem] laptop:text-[4rem];
+}
+
+.hero-subtitle-text{
+  @apply font-normal text-subtitle-text text-[0.875rem] phone:text-[1.125rem] tablet:text-[1.125rem] laptop:text-[1.25rem];
+}
+
+.body-text{
+  @apply font-light text-main-text text-[0.938rem] phone:text-[0.938rem] tablet:text-[0.938rem] laptop:text-[1.125rem];
+}
+
+.side-title-text{
+  @apply font-normal text-side-text-title text-[0.813rem] phone:text-[1rem] tablet:text-[1rem] laptop:text-[1.25rem];
+}
+
+.side-body-text{
+  @apply font-light text-side-text text-[0.688rem] phone:text-[0.75rem] tablet:text-[0.75rem] laptop:text-[0.75rem];
+}
+
+.secondary-title-text{
+  @apply font-medium text-main-text text-[1.125rem] phone:text-[1.125rem] tablet:text-[1.125rem] laptop:text-[1.25rem];
+}
+
+.secondary-title-decoration-text{
+  @apply font-light text-secondary-title-decoration text-[1.125rem] phone:text-[1.125rem] tablet:text-[1.125rem] laptop:text-[1.25rem];
 }
