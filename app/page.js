@@ -75,6 +75,16 @@ export default function Home() {
           <img src="/white_statue.png" alt="Silent Dialogues Painting" className="fill"/>
         </div>
        </section>
+
+
+       {/* Buy Tickets Section */}
+       <section className="w-full h-fit flex flex-row justify-between">
+       <Image src="/door.png" alt="door" className="shadow-inner" width={260} height={596} />
+       <div className="self-center items-center">
+       <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"}/>
+      </div>
+      </section>
+
     </div>
   );
 }
