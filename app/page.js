@@ -20,8 +20,8 @@ export default function Home() {
 
        <h2 className="secondary-title-decoration-text">Masterpieces</h2>
 
+      {/*  Silent Dialogues  */}
        <section className="w-full grid grid-cols-3">
-
         <div className="h-full flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">01</p>
@@ -40,9 +40,29 @@ export default function Home() {
           <InTextButton mainText={"Gallery"} subText={"View all artwork"}/>
         </div>
         </div>
-      
-
        </section>
+
+       {/* Contours of Tranquility */}
+       <section className="w-full grid grid-cols-3 ">
+        <Image src="/black_statue.png" alt="painting" className="fill" width={500} height={500} />
+        <div className="h-1/2 flex flex-col justify-between">          
+          <div className="-space-y-2">
+            <p className="secondary-title-decoration-text">02</p>
+            <h3 className="secondary-title-text">Contours of Tranquility</h3>
+          </div>
+          <p className="body-text w-[80%]">Delving into the serene shapes and forms that arise within chaos, capturing the essence of tranquility through minimalist contours.</p>
+        </div>
+        <div className="h-full flex flex-col justify-between items-end">     
+            <SideText title={"Artistic Alchemy"}
+          body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
+          textAlignment={"right"}/>      
+          <SideText title={"Tumultuous Symphony"}
+          body={"Life's rhythm, pulsating through the city's veins, paints a vivid portrait where disorder and structure coalesce into a silent agreement, forming an intricate pattern amidst the hustle."} 
+          textAlignment={"right"}/>           
+        </div>
+       </section>
+
+       
 
     </div>
   );
