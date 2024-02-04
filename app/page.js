@@ -62,8 +62,19 @@ export default function Home() {
         </div>
        </section>
 
-       
-
+        {/*  Whispers of Order  */}
+       <section className="w-full grid grid-cols-3 ">
+       <div className="h-1/2 flex flex-col justify-between">          
+          <div className="-space-y-2">
+            <p className="secondary-title-decoration-text">03</p>
+            <h3 className="secondary-title-text">Whispers of Order</h3>
+          </div>
+          <p className="body-text w-[80%]">Artful integration of diverse elements, creating a seamless symphony in the complex tapestry of our interconnected world. A tranquil balance, a modern alignment of disparate forces working cohesively to produce a unified and resonant whole.</p>
+        </div>
+        <div className="col-span-2">
+          <img src="/white_statue.png" alt="Silent Dialogues Painting" className="fill"/>
+        </div>
+       </section>
     </div>
   );
 }
