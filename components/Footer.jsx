@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-      <footer className="w-full h-fit grid columns-3">
+      <footer className="w-full h-fit grid columns-3 pb-8 mt-[25vh] z-20 bg-[#E9E9E9]">
         <Image src="/logo.svg" alt="logo" width={100} height={100} />
         <div className="body-text flex flex-col col-span-1 text-right items-end">
             <a href="/about" className="w-fit">About Ava</a>

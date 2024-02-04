@@ -78,7 +78,7 @@ export default function Home() {
        </section>
 
        {/* Buy Tickets Section */}
-       <section className="w-full h-fit flex flex-row justify-between mt-[50vh] mb-[25vh]">
+       <section className="w-full h-fit flex flex-row justify-between mt-[50vh]">
        <Image src="/door.png" alt="door" className="shadow-inner" width={260} height={596} />
        <div className="self-center items-center">
        <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"}/>
