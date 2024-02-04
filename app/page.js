@@ -6,8 +6,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen">
-
-      <section className="w-full h-fit flex flex-row justify-between">
+      
+      {/* Hero Section */}
+      <section className="w-full h-fit flex flex-row justify-between mt-[12.5vh]">
       <div className="self-center items-center -space-y-6">
         <h1 className="hero-title-text -translate-x-[4px]">Harmony In Chaos</h1>
         <h2 className="hero-subtitle-text">Visit Exhibition in NYC</h2>
@@ -18,10 +19,10 @@ export default function Home() {
        body={"As the exhibition unfolds, it beckons the audience to traverse the contours of paradox, finding solace in turbulence and embracing the silent dialogues within the chaos that whisper tales of an unseen, yet palpable, harmony."} 
        textAlignment={"left"}/>
 
-       <h2 className="secondary-title-decoration-text">Masterpieces</h2>
+       <h2 className="secondary-title-decoration-text mt-[12.5vh]">Masterpieces</h2>
 
       {/*  Silent Dialogues  */}
-       <section className="w-full grid grid-cols-3">
+       <section className="w-full grid grid-cols-3 mt-[25vh]">
         <div className="h-full flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">01</p>
@@ -43,8 +44,8 @@ export default function Home() {
        </section>
 
        {/* Contours of Tranquility */}
-       <section className="w-full grid grid-cols-3 ">
-        <Image src="/black_statue.png" alt="painting" className="fill" width={500} height={500} />
+       <section className="w-full h-screen grid grid-cols-3 mt-[50vh]">
+        <img src="/black_statue.png" alt="Contours of Tranquility Statue" className="fill"/>
         <div className="h-1/2 flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">02</p>
@@ -63,7 +64,7 @@ export default function Home() {
        </section>
 
         {/*  Whispers of Order  */}
-       <section className="w-full grid grid-cols-3 ">
+       <section className="w-full grid grid-cols-3 mt-[50vh]">
        <div className="h-1/2 flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">03</p>
@@ -76,15 +77,13 @@ export default function Home() {
         </div>
        </section>
 
-
        {/* Buy Tickets Section */}
-       <section className="w-full h-fit flex flex-row justify-between">
+       <section className="w-full h-fit flex flex-row justify-between mt-[50vh] mb-[25vh]">
        <Image src="/door.png" alt="door" className="shadow-inner" width={260} height={596} />
        <div className="self-center items-center">
        <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"}/>
       </div>
       </section>
-
     </div>
   );
 }
