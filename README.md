@@ -1,3 +1,7 @@
+
+<img width="1920" alt="Preview Image" src="https://github.com/adtimokhin/harmony_in_chaos_website/assets/37998602/8f46bb0a-8f8d-462e-bfab-5857420f25f7">
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
