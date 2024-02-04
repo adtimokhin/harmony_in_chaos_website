@@ -1,5 +1,4 @@
 import InTextButton from "@/components/InTextButton";
-import NavBar from "@/components/NavBar";
 import SideText from "@/components/SideText";
 import Image from "next/image";
 
@@ -28,7 +27,7 @@ export default function Home() {
             <p className="secondary-title-decoration-text">01</p>
             <h3 className="secondary-title-text">Silent Dialogues</h3>
           </div>
-          <p className="body-text w-[80%]">Combines mindfulness with the demands of our digital age. It's a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
+          <p className="body-text w-[80%]">Combines mindfulness with the demands of our digital age. It&apos;s a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
         </div>
         <div className="w-full h-full items-center justify-center flex">
           <img src="/painting.png" alt="Silent Dialogues Painting" className="fill"/>
