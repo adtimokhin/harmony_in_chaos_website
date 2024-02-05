@@ -37,7 +37,7 @@ export default function Home() {
         <SideText title={"Urban Dichotomy"}
        body={"In the heart of the urban tapestry, chaos and order converge, creating a vibrant yet enigmatic intersection where the city's rhythm unfolds."} 
        textAlignment={"right"}/>      
-          <InTextButton mainText={"Gallery"} subText={"View all artwork"}/>
+          <InTextButton mainText={"Gallery"} subText={"View all artwork"} link={"https://adtimokhin.me/"}/>
         </div>
         </div>
        </section>
@@ -80,7 +80,7 @@ export default function Home() {
        <section className="w-full h-fit flex flex-row justify-between mt-[50vh]">
        <Image src="/door.png" alt="door" className="shadow-inner" draggable={false} width={260} height={596} />
        <div className="self-center items-center">
-       <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"}/>
+       <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"} link={"https://adtimokhin.me/"}/>
       </div>
       </section>
     </div>
