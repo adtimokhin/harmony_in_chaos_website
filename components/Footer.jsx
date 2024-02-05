@@ -2,19 +2,21 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-      <footer className="w-full h-fit grid columns-3 pb-8 mt-[25vh] z-20 bg-[#E9E9E9]">
-        <Image src="/logo.svg" alt="logo" width={100} height={100} />
+      <footer className="w-full h-fit grid columns-3 pb-8 pt-[25vh] z-20 bg-[#E9E9E9]">
+        <a href="/">
+          <Image src="/logo.svg" alt="logo" width={100} height={100} draggable={false} />
+        </a>
         <div className="body-text flex flex-col col-span-1 text-right items-end">
-            <a href="/about" className="w-fit">About Ava</a>
-            <a href="/contact" className="w-fit">Gallery</a>
-            <a href="/exhibits" className="w-fit">Visit Exhibition</a>
+            <a href="/about" className="w-fit hover:text-subtitle-text transition-colors duration-200 ease-linear">About Ava</a>
+            <a href="/contact" className="w-fit hover:text-subtitle-text transition-colors duration-200 ease-linear">Gallery</a>
+            <a href="/exhibits" className="w-fit hover:text-subtitle-text transition-colors duration-200 ease-linear">Visit Exhibition</a>
         </div>
         <div className="body-text flex flex-col col-span-1 text-right items-end">
-            <a href="/about" className="w-fit">Contact Ava</a>
-            <a href="/contact" className="w-fit">Press & Media</a>
+            <a href="/about" className="w-fit hover:text-subtitle-text transition-colors duration-200 ease-linear">Contact Ava</a>
+            <a href="/contact" className="w-fit hover:text-subtitle-text transition-colors duration-200 ease-linear">Press & Media</a>
       </div>
       <div className="col-span-3 bg-red w-full h-10 text-center mt-[135px]"> 
-        <p className="secondary-title-decoration-text"> Designed by <a className="underline" href="https://www.adtimokhin.me/" target="_blank">@adtimokhin</a></p>
+        <p className="secondary-title-decoration-text "> Designed by <a className="underline hover:text-subtitle-text transition-colors duration-200 ease-linear" href="https://www.adtimokhin.me/" target="_blank">@adtimokhin</a></p>
        </div>
     </footer>
     );

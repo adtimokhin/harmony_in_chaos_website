@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="hero-title-text -translate-x-[4px]">Harmony In Chaos</h1>
         <h2 className="hero-subtitle-text">Visit Exhibition in NYC</h2>
       </div>
-        <Image src="/door.png" alt="door" className="shadow-inner" width={260} height={596} />
+        <Image src="/door.png" alt="door" className="shadow-inner" draggable={false} width={260} height={596} priority />
       </section>
       <SideText title={"Contemplative Exploration"}
        body={"As the exhibition unfolds, it beckons the audience to traverse the contours of paradox, finding solace in turbulence and embracing the silent dialogues within the chaos that whisper tales of an unseen, yet palpable, harmony."} 
@@ -30,7 +30,7 @@ export default function Home() {
           <p className="body-text w-[80%]">Combines mindfulness with the demands of our digital age. It&apos;s a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
         </div>
         <div className="w-full h-full items-center justify-center flex">
-          <img src="/painting.png" alt="Silent Dialogues Painting" className="fill"/>
+          <img src="/painting.png" alt="Silent Dialogues Painting" draggable={false} className="fill"/>
         </div>
         <div>
         <div className="h-full flex flex-col justify-between items-end">    
@@ -44,7 +44,7 @@ export default function Home() {
 
        {/* Contours of Tranquility */}
        <section className="w-full h-screen grid grid-cols-3 mt-[50vh]">
-        <img src="/black_statue.png" alt="Contours of Tranquility Statue" className="fill"/>
+        <img src="/black_statue.png" alt="Contours of Tranquility Statue" draggable={false} className="fill"/>
         <div className="h-1/2 flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">02</p>
@@ -72,13 +72,13 @@ export default function Home() {
           <p className="body-text w-[80%]">Artful integration of diverse elements, creating a seamless symphony in the complex tapestry of our interconnected world. A tranquil balance, a modern alignment of disparate forces working cohesively to produce a unified and resonant whole.</p>
         </div>
         <div className="col-span-2">
-          <img src="/white_statue.png" alt="Silent Dialogues Painting" className="fill"/>
+          <img src="/white_statue.png" alt="Silent Dialogues Painting" draggable={false} className="fill"/>
         </div>
        </section>
 
        {/* Buy Tickets Section */}
        <section className="w-full h-fit flex flex-row justify-between mt-[50vh]">
-       <Image src="/door.png" alt="door" className="shadow-inner" width={260} height={596} />
+       <Image src="/door.png" alt="door" className="shadow-inner" draggable={false} width={260} height={596} />
        <div className="self-center items-center">
        <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"}/>
       </div>
