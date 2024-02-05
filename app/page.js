@@ -8,7 +8,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="w-full h-fit flex flex-row justify-between mt-[12.5vh]">
-      <div className="self-center items-center -space-y-6">
+      <div className="self-center items-center tablet:-space-y-4 laptop:-space-y-6">
         <h1 className="hero-title-text -translate-x-[4px]">Harmony In Chaos</h1>
         <h2 className="hero-subtitle-text">Visit Exhibition in NYC</h2>
       </div>
@@ -29,16 +29,16 @@ export default function Home() {
           </div>
           <p className="body-text w-[80%]">Combines mindfulness with the demands of our digital age. It&apos;s a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
         </div>
-        <div className="w-full h-full items-center justify-center flex">
+        <div className="w-full h-full items-center justify-center flex tablet:col-span-2 laptop:col-span-1">
           <img src="/painting.png" alt="Silent Dialogues Painting" draggable={false} className="fill"/>
         </div>
-        <div>
-        <div className="h-full flex flex-col justify-between items-end">    
-        <SideText title={"Urban Dichotomy"}
-       body={"In the heart of the urban tapestry, chaos and order converge, creating a vibrant yet enigmatic intersection where the city's rhythm unfolds."} 
-       textAlignment={"right"}/>      
+        <div className="tablet:h-fit laptop:h-full tablet:items-center laptop:items-end flex tablet:flex-row laptop:flex-col justify-between tablet:col-span-3 laptop:col-span-1 tablet:mt-[12.5vh] laptop:mt-0">    
+        <div className="tablet:order-last laptop:order-first">
+          <SideText title={"Urban Dichotomy"}
+        body={"In the heart of the urban tapestry, chaos and order converge, creating a vibrant yet enigmatic intersection where the city's rhythm unfolds."} 
+        textAlignment={"right"}/>    
+       </div>  
           <InTextButton mainText={"Gallery"} subText={"View all artwork"} link={"https://adtimokhin.me/"}/>
-        </div>
         </div>
        </section>
 
