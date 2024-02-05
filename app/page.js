@@ -43,16 +43,24 @@ export default function Home() {
        </section>
 
        {/* Contours of Tranquility */}
-       <section className="w-full h-screen grid grid-cols-3 mt-[50vh]">
-        <img src="/black_statue.png" alt="Contours of Tranquility Statue" draggable={false} className="fill"/>
-        <div className="h-1/2 flex flex-col justify-between">          
+       <section className="w-full h-fit grid grid-cols-3 mt-[50vh]">
+        <div className="tablet:col-span-2 laptop:col-span-1 h-fit">
+          <img src="/black_statue.png" alt="Contours of Tranquility Statue" draggable={false} className="fill"/>
+        </div>
+        <div className="tablet:h-full laptop:h-1/2 flex flex-col justify-between tablet:translate-x-3 laptop:translate-x-0">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">02</p>
             <h3 className="secondary-title-text">Contours of Tranquility</h3>
           </div>
           <p className="body-text w-[80%]">Delving into the serene shapes and forms that arise within chaos, capturing the essence of tranquility through minimalist contours.</p>
+          {/* Side text that is only visible on tablets rn */}
+          <div className="tablet:inline laptop:hidden items-end">
+          <SideText title={"Artistic Alchemy"}
+          body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
+          textAlignment={"left"}/>   
+          </div>
         </div>
-        <div className="h-full flex flex-col justify-between items-end">     
+        <div className="h-full flex-col justify-between items-end tablet:hidden laptop:flex">     
             <SideText title={"Artistic Alchemy"}
           body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
           textAlignment={"right"}/>      
