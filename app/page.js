@@ -7,12 +7,16 @@ export default function Home() {
     <div className="min-h-screen">
       
       {/* Hero Section */}
-      <section className="w-full h-fit flex flex-row justify-between mt-[12.5vh]">
-      <div className="self-center items-center tablet:-space-y-4 laptop:-space-y-6">
+      <section className="w-full h-fit mt-[12.5vh] grid grid-cols-3">
+      <div className="self-center items-center tablet:-space-y-4 laptop:-space-y-6 col-span-2">
         <h1 className="hero-title-text -translate-x-[4px]">Harmony In Chaos</h1>
         <h2 className="hero-subtitle-text">Visit Exhibition in NYC</h2>
       </div>
-        <Image src="/door.png" alt="door" className="shadow-inner" draggable={false} width={260} height={596} priority />
+
+      <div className="col-span-1 col-start-3 items-end flex justify-end pl-2 h-fit">
+        <img src="/door.png" alt="door" className="aspect-[9/19] max-h-[596px]"draggable={false} />
+      </div>
+
       </section>
       <SideText title={"Contemplative Exploration"}
        body={"As the exhibition unfolds, it beckons the audience to traverse the contours of paradox, finding solace in turbulence and embracing the silent dialogues within the chaos that whisper tales of an unseen, yet palpable, harmony."} 
@@ -85,9 +89,11 @@ export default function Home() {
        </section>
 
        {/* Buy Tickets Section */}
-       <section className="w-full h-fit flex flex-row justify-between mt-[50vh]">
-       <Image src="/door.png" alt="door" className="shadow-inner" draggable={false} width={260} height={596} />
-       <div className="self-center items-center">
+       <section className="w-full h-fit grid grid-cols-3 mt-[50vh]">
+       <div className="col-span-1 items-end flex justify-start pr-2 h-fit">
+        <img src="/door.png" alt="door" className="aspect-[9/19] max-h-[596px]"draggable={false} />
+        </div>
+       <div className="self-center items-center col-span-1 col-start-3 pl-2">
        <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"} link={"https://adtimokhin.me/"}/>
       </div>
       </section>
