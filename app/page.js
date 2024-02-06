@@ -89,11 +89,11 @@ export default function Home() {
        </section>
 
        {/* Buy Tickets Section */}
-       <section className="w-full h-fit grid grid-cols-3 mt-[50vh]">
+       <section className="w-full h-fit grid tablet:grid-cols-3 grid-cols-2 mt-[50vh]">
        <div className="col-span-1 items-end flex justify-start pr-2 h-fit">
         <img src="/door.png" alt="door" className="aspect-[9/19] max-h-[596px]"draggable={false} />
         </div>
-       <div className="self-center items-center col-span-1 col-start-3 pl-2">
+       <div className="self-center items-center col-span-1 tablet:col-start-3 col-start-2 pl-2">
        <InTextButton mainText={"Visit Exhibition"} subText={"Book Tickets"} link={"https://adtimokhin.me/"}/>
       </div>
       </section>

@@ -1,8 +1,8 @@
 "use client";
 
 import Image from 'next/image';
-import React from 'react';
 
+// TODO: Use the <img> tag to make it easy to change the size of the image for different screen sizes
 const InTextButton = ({ mainText, subText, link }) => {
 
     // Function to open the link in a new tab
