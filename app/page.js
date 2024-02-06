@@ -75,15 +75,15 @@ export default function Home() {
        </section>
 
         {/*  Whispers of Order  */}
-       <section className="w-full h-fit grid grid-cols-3 mt-[50vh]">
+       <section className="w-full h-fit grid grid-cols-2 tablet:grid-cols-3 mt-[50vh]">
        <div className="h-1/2 flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">03</p>
             <h3 className="secondary-title-text">Whispers of Order</h3>
           </div>
-          <p className="body-text w-[80%] tablet:pt-20 laptop:pt-0">Artful integration of diverse elements, creating a seamless symphony in the complex tapestry of our interconnected world. A tranquil balance, a modern alignment of disparate forces working cohesively to produce a unified and resonant whole.</p>
+          <p className="body-text w-[80%] pt-20 laptop:pt-0">Artful integration of diverse elements, creating a seamless symphony in the complex tapestry of our interconnected world. A tranquil balance, a modern alignment of disparate forces working cohesively to produce a unified and resonant whole.</p>
         </div>
-        <div className="tablet:col-span-3 laptop:col-span-2 tablet:-translate-y-20 laptop:translate-y-0">
+        <div className="col-span-2 -translate-y-20 laptop:translate-y-0">
           <img src="/white_statue.png" alt="Silent Dialogues Painting" draggable={false} className="fill"/>
         </div>
        </section>
