@@ -19,6 +19,14 @@ body {
 
   :)
 */
+
+@media (max-width: 743px) {
+  .hero-title-text {
+    line-height: 0.91;
+  }
+}
+
+
 .hero-title-text{
   @apply font-bold text-main-text text-[1.5rem] phone:text-[2.25rem] tablet:text-[2.25rem] laptop:text-[4rem];
 }

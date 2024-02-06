@@ -17,7 +17,7 @@ const NavBar = () => {
       </div>
 
       {/* Burger menu */}
-      <div className="col-span-1 items-end flex flex-col">
+      <div className="col-span-1 items-end flex-col flex tablet:hidden">
       <svg width="47" height="24" viewBox="0 0 47 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="47" height="1" fill="#979797"/>
 <rect x="5" y="11" width="37" height="1" fill="#979797"/>
