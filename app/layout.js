@@ -3,10 +3,30 @@ import "./globals.css";
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 
+
 export const metadata = {
   title: "Harmony In Chaos | Ava Sterling Exhibition",
   description: "Visit the Ava Sterling Exhibition to experience the harmony in chaos.",
-};
+  keywords: 'Ava Sterling,Harmony In Chaos,Exhibition NY,adtimokhin',
+  author: 'adtimokhin',
+  viewport: 'width=device-width, initial-scale=1.0',
+  // Add other important tags here
+  openGraph: {
+    title: 'Harmony In Chaos | Ava Sterling Exhibition',
+    description: 'Visit the Ava Sterling Exhibition to experience the harmony in chaos.',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://harmony-in-chaos.vercel.app/',
+    site_name: 'Harmony In Chaos',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@adtimokhin',
+    creator: '@adtimokhin',
+  },
+}
+
+
 
 export default function RootLayout({ children }) {
   return (
