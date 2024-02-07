@@ -8,13 +8,13 @@ export default function Home() {
       
       {/* Hero Section */}
       {/* TODO: Did not do the two cols for phones */}
-      <section className="w-full h-fit mt-[12.5vh] grid grid-cols-3">
-      <div className="self-center items-center tablet:-space-y-4 laptop:-space-y-6 col-span-2">
+      <section className="w-full h-fit mt-[12.5vh] grid tablet:grid-cols-3 grid-cols-2">
+      <div className="self-center items-center tablet:-space-y-4 laptop:-space-y-6 tablet:col-span-2">
         <h1 className="hero-title-text -translate-x-[4px]">Harmony in Chaos</h1>
         <h2 className="hero-subtitle-text">Visit Exhibition in NYC</h2>
       </div>
 
-      <div className="col-span-1 col-start-3 items-end flex justify-end pl-2 h-fit">
+      <div className="col-span-1 tablet:col-start-3 items-end flex justify-end pl-2 h-fit">
         <img src="/door.png" alt="door" className="aspect-[9/19] max-h-[596px]"draggable={false} />
       </div>
 
