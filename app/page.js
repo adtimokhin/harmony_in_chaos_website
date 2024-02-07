@@ -20,9 +20,12 @@ export default function Home() {
 
       </section>
       {/* TODO: This block of text can take any dimensinos it likes - not cool */}
-      <SideText title={"Contemplative Exploration"}
+      <div className="grid grid-cols-2 tablet:grid-cols-3">
+         <SideText title={"Contemplative Exploration"}
        body={"As the exhibition unfolds, it beckons the audience to traverse the contours of paradox, finding solace in turbulence and embracing the silent dialogues within the chaos that whisper tales of an unseen, yet palpable, harmony."} 
        textAlignment={"left"}/>
+      </div>
+     
 
        <h2 className="secondary-title-decoration-text mt-[12.5vh]">Masterpieces</h2>
 
