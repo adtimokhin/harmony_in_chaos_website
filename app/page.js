@@ -25,24 +25,37 @@ export default function Home() {
        <h2 className="secondary-title-decoration-text mt-[12.5vh]">Masterpieces</h2>
 
       {/*  Silent Dialogues  */}
-       <section className="w-full grid grid-cols-3 mt-[25vh]">
+       <section className="w-full grid tablet:grid-cols-3 grid-cols-2 mt-[25vh]">
         <div className="h-full flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">01</p>
             <h3 className="secondary-title-text">Silent Dialogues</h3>
           </div>
-          <p className="body-text w-[80%]">Combines mindfulness with the demands of our digital age. It&apos;s a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
+          <p className="body-text w-[80%] tablet:inline hidden">Combines mindfulness with the demands of our digital age. It&apos;s a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
         </div>
-        <div className="w-full h-full items-center justify-center flex tablet:col-span-2 laptop:col-span-1">
+        <div className="w-full h-full items-center justify-center flex col-span-2 laptop:col-span-1 tablet:pt-0 pt-4">
           <img src="/painting.png" alt="Silent Dialogues Painting" draggable={false} className="fill"/>
         </div>
+
+      {/* Duplicate text */}
+      <div className="tablet:hidden col-span-2 w-full h-fit pt-4 pb-[12.5vh]">
+        <div className="grid grid-cols-2 align-bottom">
+        <p className="body-text w-[80%] inline tablet:hidden">Combines mindfulness with the demands of our digital age. It&apos;s a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
+        <div className="flex flex-1 justify-end">
+           <SideText title={"Urban Dichotomy"}
+        body={"In the heart of the urban tapestry, chaos and order converge, creating a vibrant yet enigmatic intersection where the city's rhythm unfolds."} 
+        textAlignment={"right"}/> 
+        </div>
+        </div>
+      </div>
+
         <div className="tablet:h-fit laptop:h-full tablet:items-center laptop:items-end flex tablet:flex-row laptop:flex-col justify-between tablet:col-span-3 laptop:col-span-1 tablet:mt-[12.5vh] laptop:mt-0">    
-        <div className="tablet:order-last laptop:order-first">
+        <div className="tablet:order-last laptop:order-first hidden tablet:inline">
           <SideText title={"Urban Dichotomy"}
         body={"In the heart of the urban tapestry, chaos and order converge, creating a vibrant yet enigmatic intersection where the city's rhythm unfolds."} 
         textAlignment={"right"}/>    
        </div>  
-          <InTextButton mainText={"Gallery"} subText={"View all artwork"} link={"https://adtimokhin.me/"}/>
+            <InTextButton mainText={"Gallery"} subText={"View all artwork"} link={"https://adtimokhin.me/"}/>
         </div>
        </section>
 
@@ -75,7 +88,7 @@ export default function Home() {
        </section>
 
         {/*  Whispers of Order  */}
-       <section className="w-full h-fit grid grid-cols-2 tablet:grid-cols-3 mt-[50vh]">
+       <section className="w-full h-fit grid grid-cols-2 laptop:grid-cols-3 mt-[50vh]">
        <div className="h-1/2 flex flex-col justify-between">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">03</p>

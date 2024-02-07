@@ -19,7 +19,7 @@ const InTextButton = ({ mainText, subText, link }) => {
                 <p className='secondary-title-decoration-text'>{mainText}</p>
                 <p className='secondary-title-text'>{subText}</p>
             </div>
-            <Image src={"/arrow.svg"} alt="Arrow" width={90} height={30} />
+            <Image src={"/arrow.svg"} alt="Arrow" width={30} height={30} />
         </div>
     );
 };

@@ -24,7 +24,7 @@ const SideText = ({ title, body, textAlignment }) => {
     const size = useElementSize(ref);
 
     return (
-        <div className='space-y-[8px] w-fit'>
+        <div className='space-y-[8px] w-fit h-fit'>
             <div className='w-fit'> 
                 <h4 className='side-title-text'
                     style={{
