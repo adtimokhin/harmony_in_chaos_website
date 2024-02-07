@@ -7,9 +7,10 @@ export default function Home() {
     <div className="min-h-screen">
       
       {/* Hero Section */}
+      {/* TODO: Did not do the two cols for phones */}
       <section className="w-full h-fit mt-[12.5vh] grid grid-cols-3">
       <div className="self-center items-center tablet:-space-y-4 laptop:-space-y-6 col-span-2">
-        <h1 className="hero-title-text -translate-x-[4px]">Harmony In Chaos</h1>
+        <h1 className="hero-title-text -translate-x-[4px]">Harmony in Chaos</h1>
         <h2 className="hero-subtitle-text">Visit Exhibition in NYC</h2>
       </div>
 
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
 
       </section>
+      {/* TODO: This block of text can take any dimensinos it likes - not cool */}
       <SideText title={"Contemplative Exploration"}
        body={"As the exhibition unfolds, it beckons the audience to traverse the contours of paradox, finding solace in turbulence and embracing the silent dialogues within the chaos that whisper tales of an unseen, yet palpable, harmony."} 
        textAlignment={"left"}/>
@@ -48,7 +50,6 @@ export default function Home() {
         </div>
         </div>
       </div>
-
         <div className="tablet:h-fit laptop:h-full tablet:items-center laptop:items-end flex tablet:flex-row laptop:flex-col justify-between tablet:col-span-3 laptop:col-span-1 tablet:mt-[12.5vh] laptop:mt-0">    
         <div className="tablet:order-last laptop:order-first hidden tablet:inline">
           <SideText title={"Urban Dichotomy"}
@@ -60,24 +61,24 @@ export default function Home() {
        </section>
 
        {/* Contours of Tranquility */}
-       <section className="w-full h-fit grid grid-cols-3 mt-[50vh]">
-        <div className="tablet:col-span-2 laptop:col-span-1 h-fit">
-          <img src="/black_statue.png" alt="Contours of Tranquility Statue" draggable={false} className="fill"/>
+       <section className="w-full h-fit grid tablet:grid-cols-3 grid-cols-2 mt-[50vh]">
+        <div className="col-span-2 laptop:col-span-1 h-fit justify-center flex flex-1 tablet:order-1 order-2">
+          <img src="/black_statue.png" alt="Contours of Tranquility Statue" draggable={false} className="contain max-h-[80vh] self-center"/>
         </div>
-        <div className="tablet:h-full laptop:h-1/2 flex flex-col justify-between tablet:translate-x-3 laptop:translate-x-0">          
+        <div className="tablet:h-full laptop:h-1/2 flex flex-col justify-between translate-x-3 laptop:translate-x-0 tablet:order-2 order-1">          
           <div className="-space-y-2">
             <p className="secondary-title-decoration-text">02</p>
             <h3 className="secondary-title-text">Contours of Tranquility</h3>
           </div>
-          <p className="body-text w-[80%]">Delving into the serene shapes and forms that arise within chaos, capturing the essence of tranquility through minimalist contours.</p>
+          <p className="body-text w-[80%] hidden tablet:inline">Delving into the serene shapes and forms that arise within chaos, capturing the essence of tranquility through minimalist contours.</p>
           {/* Side text that is only visible on tablets rn */}
-          <div className="tablet:inline laptop:hidden items-end">
+          <div className="hidden tablet:inline laptop:hidden items-end">
           <SideText title={"Artistic Alchemy"}
           body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
           textAlignment={"left"}/>   
           </div>
         </div>
-        <div className="h-full flex-col justify-between items-end tablet:hidden laptop:flex">     
+        <div className="h-full flex-col justify-between items-end hidden laptop:flex tablet:order-3">     
             <SideText title={"Artistic Alchemy"}
           body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
           textAlignment={"right"}/>      
@@ -85,6 +86,17 @@ export default function Home() {
           body={"Life's rhythm, pulsating through the city's veins, paints a vivid portrait where disorder and structure coalesce into a silent agreement, forming an intricate pattern amidst the hustle."} 
           textAlignment={"right"}/>           
         </div>
+         {/* Duplicate text */}
+          <div className="tablet:hidden col-span-2 w-full h-fit pt-4 pb-[12.5vh] order-3" >
+            <div className="grid grid-cols-2 align-bottom">
+              <p className="body-text w-[80%] inline tablet:hidden">Delving into the serene shapes and forms that arise within chaos, capturing the essence of tranquility through minimalist contours.</p>
+              <div className="flex flex-1 justify-end">
+                <SideText title={"Artistic Alchemy"}
+                          body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
+                          textAlignment={"right"}/> 
+              </div>
+            </div>
+          </div>
        </section>
 
         {/*  Whispers of Order  */}
