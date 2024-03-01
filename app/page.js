@@ -47,9 +47,10 @@ export default function Home() {
         <div className="grid grid-cols-2 align-bottom">
         <p className="body-text w-[80%] inline tablet:hidden">Combines mindfulness with the demands of our digital age. It&apos;s a tranquil pursuit, navigating the currents of information to find a serene center within the dynamic pace of our ever-evolving world.</p>
         <div className="flex flex-1 justify-end">
-           <SideText title={"Urban Dichotomy"}
+          <div className="w-fit"><SideText title={"Urban Dichotomy"}
         body={"In the heart of the urban tapestry, chaos and order converge, creating a vibrant yet enigmatic intersection where the city's rhythm unfolds."} 
-        textAlignment={"right"}/> 
+        textAlignment={"right"}/> </div>
+           
         </div>
         </div>
       </div>
@@ -82,21 +83,24 @@ export default function Home() {
           </div>
         </div>
         <div className="h-full flex-col justify-between items-end hidden laptop:flex tablet:order-3">     
-            <SideText title={"Artistic Alchemy"}
+        <div className="w-fit"> <SideText title={"Artistic Alchemy"}
           body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
-          textAlignment={"right"}/>      
-          <SideText title={"Tumultuous Symphony"}
+          textAlignment={"right"}/>  </div>
+        <div className="w-fit"><SideText title={"Tumultuous Symphony"}
           body={"Life's rhythm, pulsating through the city's veins, paints a vivid portrait where disorder and structure coalesce into a silent agreement, forming an intricate pattern amidst the hustle."} 
-          textAlignment={"right"}/>           
+          textAlignment={"right"}/>   </div>
+               
+                  
         </div>
          {/* Duplicate text */}
           <div className="tablet:hidden col-span-2 w-full h-fit pt-4 pb-[12.5vh] order-3" >
             <div className="grid grid-cols-2 align-bottom">
               <p className="body-text w-[80%] inline tablet:hidden">Delving into the serene shapes and forms that arise within chaos, capturing the essence of tranquility through minimalist contours.</p>
               <div className="flex flex-1 justify-end">
-                <SideText title={"Artistic Alchemy"}
+                <div className="w-fit">  <SideText title={"Artistic Alchemy"}
                           body={"The artists, akin to alchemists of the visual realm, unveil the harmony within chaos through deliberate strokes and nuanced expressions, transcending the surface to explore deep realms of emotion."} 
-                          textAlignment={"right"}/> 
+                          textAlignment={"right"}/> </div>
+              
               </div>
             </div>
           </div>
